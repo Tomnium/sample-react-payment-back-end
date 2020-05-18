@@ -1,2 +1,3 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/payapp');
+mongoose.set('useCreateIndex', true);
+mongoose.connect('mongodb://localhost/payapp', { useNewUrlParser: true, useUnifiedTopology: true });

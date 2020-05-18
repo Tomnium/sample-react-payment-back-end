@@ -23,6 +23,6 @@ app.use(bodyParser.json());
 
 app.use('/api/auth', auth);
 app.use('/api/product', product);
-app.use('/api/pay',pay);
+app.use('/api/pay', pay);
 
 module.exports = app;

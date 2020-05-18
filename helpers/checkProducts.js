@@ -1,7 +1,7 @@
 const Product = require('../Models/product/Product');
 
-exports.checkProducts =()=>{
-    Product.count(function (err, count) {
+exports.checkProducts = () => {
+    Product.countDocuments(function (err, count) {
         if (!err && count === 0) {
             insertProducts()
         }
